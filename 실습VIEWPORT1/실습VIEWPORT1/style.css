@@ -1,0 +1,126 @@
+body,
+ul,
+li,
+h3,
+p {
+  margin: 0px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*
+	1. 배경색 f4f4f4를 설정하고
+	큰 향수 이미지를 배경 이미지로 붙여주세요.
+
+    2. Sidebar를 만들어주세요.
+	너비값 300px
+
+	3. 메뉴에 hover하면 배경색을 검정색으로 바꿔주세요. 
+
+	4. 콘텐츠 영역을 만들어주세요.
+	너비값은 1000px
+
+	6. 태블릿 1024px 이하일때 반응형으로 바꿔주세요
+
+	7. 모바일 786px 이하일때 반응형으로 바꿔주세요
+*/
+body {
+	background: url(images/big-perfume.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #f4f4f4;
+	
+}
+.sidebar {
+	width: 300px;
+	height: 100vh;
+	background-color: #312a2a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 50px 30px;
+	box-sizing: border-box;
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	background-size: 200px;
+	background-position: 40px 30px;
+	text-align: center;
+	
+
+	
+}
+.logo {
+	display: inline-block;
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	border: 3px solid #ffffff;
+	padding: 8px 14px;
+	margin: 0 auto 30px auto;
+}
+
+.sidebar ul { margin-top: 30px; }
+.sidebar li { margin: 12px 0; }
+.sidebar li a {
+	display: block;
+	padding: 6px 12px;
+	border-radius: 4px;
+	color: #bfbfbf;
+}
+.sidebar li a:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.contents {
+	margin-left: 300px;
+	padding: 50px 30px;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: auto;
+	gap: 30px;
+	max-width: 1000px;
+}
+
+.contents li {
+	background: #ffffff;
+	border: 1px solid #e6e6e6;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.contents li img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.contents li .desc {
+	text-align: center;
+	padding: 14px 10px;
+	background: linear-gradient(to bottom, rgba(153, 0, 255, 0.06), rgba(153, 0, 255, 0.18));
+}
+
+.contents li .desc h3 { color: #7a2cb3; font-size: 18px; margin-bottom: 6px; }
+.contents li .desc p { color: #6f6f6f; font-size: 14px; }
+	
+
+
+
